@@ -1,0 +1,191 @@
+/*from outside to inside: margin, border, padding, content*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* html {
+	height: 100%;
+	background-size: cover;
+	background-image: linear-gradient(to bottom right, #facd00, #fda00d);
+	background-repeat: no-repeat;
+} */
+
+body {
+    font-family: 'Poppins';
+    font-size: 22px;
+    background-size: cover;
+    background-image: linear-gradient(to bottom right, #facd00, #fda00d);
+    background-repeat: no-repeat;
+    margin: 0 20%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 auto 0;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+header,
+nav,
+div,
+footer,
+button,
+p {
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 1px 5px 1px #cc9338;
+}
+
+p {
+    box-shadow: none;
+}
+
+header {
+    background-color: #7fc9ff;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #a5ff7f;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+div {
+    background-color: #FBDB4B;
+}
+
+div p {
+    font-size: 17px;
+}
+
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #ae8e00;
+}
+
+ul li a {
+    float: left;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+
+/* Add a color to the active/current link */
+
+a:hover {
+    background-color: #FCB524;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+nav a:hover,
+a.active {
+    background-color: #82DE5B;
+}
+
+.soa,
+.greenhall,
+.bulletin,
+.page-links {
+    overflow: hidden;
+}
+
+#soa-image,
+#greenhall {
+    max-width: 600px;
+    max-height: 600px;
+    float: left;
+    margin-right: 10px;
+}
+
+.soa p {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #a17fff;
+    font-size: 14px;
+}
+
+button {
+    margin: 10px 5px 0 0;
+    padding: 5px;
+    background-color: #d67fff;
+}
+
+.bulletin p {
+    column-count: 2;
+}
+
+
+/*p {
+	background: rgba(255, 255, 255, 0.25);
+}*/
+
+
+/* Done the parent and child so we can show the info on the left 
+   and the useful links on the right
+   but I couldn't do it lol */
+
+.parent {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.child {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #soa-image {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #soa-greenhall {
+        float: none;
+    }
+    .bulletin p {
+        column-count: 1;
+    }
+}
